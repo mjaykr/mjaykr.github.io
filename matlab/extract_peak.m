@@ -1,8 +1,10 @@
-clear all;
+clear;
 clc;
-data = dlmread(input('Enter Your Text File:-'));
+% data = readmatrix('Al6Mg6.dat');
+data = readmatrix(input('Enter Your Text File:-'));
 intensity =data(:,2);
 two_theta = data(:,1);
+plot(two_theta,intensity);drawnow;
 step = two_theta(2) -two_theta(1);
 data(:,2)= smoothdata(data(:,2));
 answer = 0;
@@ -10,6 +12,7 @@ while answer == 0
     peak_height = input('Enter Minimum peak height (default=300):-');
     peak_prominence = input('Enter Minimum peak Prominence (default=10):-');
     findpeaks(data(:,2),data(:,1),'MinPeakHeight',peak_height,'MinPeakProminence',peak_prominence)
+    drawnow
     answer = input('Is all peaks are identified? (yes=1/no=0):-');
     close;
     [pks, locs] = findpeaks(data(:,2),data(:,1),'MinPeakHeight',peak_height,'MinPeakProminence',peak_prominence);
@@ -28,14 +31,20 @@ for i = 1:size(locs)
         peak_intensity = peak_intensity - min(peak_intensity);
         [~,two_theta_0_index] = max(peak_intensity);
         peak_theta = two_theta(left_index:right_index);
-        two_theta_0 = peak_theta(two_theta_0_index); 
-        peak_theta = peak_theta -two_theta_0;
-        peak = [peak_theta peak_intensity ];
-        plot(peak(:,1),peak(:,2))
-        file_name = strcat('Peak','_',num2str(i),'.','xlsx');
+        two_theta_0 = peak_theta(two_theta_0_index);
+        plot(peak_theta,peak_intensity); drawnow
+        K_0 = (2*sin(deg2rad(two_theta_0/2)))/0.15496; % Unit is 1/nm
+        K = (2*sin(deg2rad(peak_theta/2)))/0.15496; % Unit is 1/nm
+        K_minus_K_0 = K - K_0;
+        Instrumental_profile = [K_minus_K_0 peak_intensity];
+        % plot(Instrumental_profile(:,1),Instrumental_profile(:,2));drawnow;
+        file_name = strcat(num2str(locs(i)),'.txt');
+        % file_name = strcat('Peak','_',num2str(i),'.','xlsx');
         answer = input('Are you satisfied with plot (yes=1/no=0):-');
         close;
-        xlswrite(file_name,peak)
+        writematrix(Instrumental_profile,file_name)
+        movefile(file_name, num2str(locs(i))); % Removing *.txt extension from instrumental file
+        % xlswrite(file_name,Instrumental_profile)
     end
     
 end
