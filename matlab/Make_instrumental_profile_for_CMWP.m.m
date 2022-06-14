@@ -1,7 +1,8 @@
 clear;
 clc;
-% data = readmatrix('Al6Mg6.dat');
-data = readmatrix(input('Enter Your Text File:-'));
+data_file = 'Al6Mg6.dat';
+%data_file = input('Enter Your Text File:-');
+data = readmatrix(data_file);
 intensity =data(:,2);
 two_theta = data(:,1);
 plot(two_theta,intensity);drawnow;
@@ -48,3 +49,15 @@ for i = 1:size(locs)
     end
     
 end
+
+%% Write index of the peaks
+
+Index_matrix(:,1) = locs; 
+Index_matrix(:,2) = round(pks,2) ; 
+stem(Index_matrix(:,1),Index_matrix(:,2),"filled")
+FCC = [111;200;220;311;222;400;331;420;422;333];
+BCC = [110;200;211;220;310;222;321;400;330;420;332;422;431;5211];
+Index_matrix(:,3) = FCC(1:length(Index_matrix));
+Index_matrix(:,4) = zeros(size(FCC(1:length(Index_matrix))));
+writematrix(Index_matrix,strcat(data_file,'.peak-index.dat'),Delimiter=" ")
+
