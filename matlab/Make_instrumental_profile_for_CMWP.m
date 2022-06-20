@@ -43,7 +43,7 @@ for i = 1:size(locs)
         % file_name = strcat('Peak','_',num2str(i),'.','xlsx');
         answer = input('Are you satisfied with plot (yes=1/no=0):-');
         close;
-        writematrix(Instrumental_profile,file_name)
+        writematrix(Instrumental_profile,file_name,Delimiter=" ")
         movefile(file_name, num2str(locs(i))); % Removing *.txt extension from instrumental file
         % xlswrite(file_name,Instrumental_profile)
     end
