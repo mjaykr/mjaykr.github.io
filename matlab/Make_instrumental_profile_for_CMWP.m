@@ -50,7 +50,7 @@ for i = 1:size(locs)
     
 end
 
-%% Write index of the peaks;
+%% Write index of the peaks
 
 Index_matrix(:,1) = locs; 
 Index_matrix(:,2) = round(pks,2) ; 
