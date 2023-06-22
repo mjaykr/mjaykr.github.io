@@ -6,10 +6,15 @@
 3. *Sentence Structure and Grammar*: 
 
    a. There is a missing space before the word "Also" in "costly [7]Also".
+   
    b. There is a missing space before "Previous research" in "temperatures [4]Previous research".
+   
    c. Add a comma after “temperatures” and “interface” for improved clarity.
+   
    d. Instead of "the sintering kinetics of molybdenum are enhanced", it would be more grammatically correct to say "the sintering kinetics of molybdenum is enhanced".
+   
    e. The term "thermo-mechanical treatment" might be better expressed in its abbreviated form, TMT, after the first usage.
+   
    f. The last sentence "When Ni-Cu binary binder is used in activated sintering of Mo, then there is formation of a brittleMo-Ni phase at the solid-liquid interface lowering the ductility of these alloys [9]." could be made clearer by rephrasing to "When a Ni-Cu binary binder is used in the activated sintering of Mo, a brittle Mo-Ni phase forms at the solid-liquid interface, which lowers the ductility of these alloys [9]."
 
-4. *Objective and Scope*: Clearly stating the objective of the study in a separate paragraph can be beneficial. Furthermore, it might be worthwhile to mention the scope of the study, as in whether if it is an investigation without a specific focus or you are focusing on certain applications or industries.
+5. *Objective and Scope*: Clearly stating the objective of the study in a separate paragraph can be beneficial. Furthermore, it might be worthwhile to mention the scope of the study, as in whether if it is an investigation without a specific focus or you are focusing on certain applications or industries.
