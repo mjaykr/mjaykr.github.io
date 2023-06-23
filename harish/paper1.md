@@ -35,4 +35,41 @@
 
 1. In the sentence “The nomenclature, composition and effective sintering time* of these alloys are provided in Table 2.”, it would be grammatically correct to change “are” to “is” since the phrase “nomenclature, composition and effective sintering time” is taken collectively as information provided in Table 2.
 
-   
+# Comment for Section 3.1 and 3.2 : Result and Discussion
+
+1. In the Densification Response section, you talk about the role of Ni and Cu in the densification of the alloys, but the initial role of Mo in the densification process isn't discussed.
+
+2. The section states that alloys A4 and A5 experience a loss of structural rigidity due to distortion but does not provide a detailed explanation or discuss the possible causes of distortion. I would suggest adding a subsection under the “Densification response” section, elaborating on the factors contributing to the distortion observed in alloys A4 and A5. Explaining why A4 and A5 experience distortion while others do not, in relation to their compositions and processing conditions, could be very informative.
+
+3. When you refer to various figures, it might be beneficial to add a brief description of what the reader should focus on. For example, in "As Mo has negligible solubility in Cu, as can be seen from Figure 5(b), A1 does not undergo LPS," it would be helpful to guide the reader on what they should observe in Figure 5(b).
+
+4. Clarifying Terminology: In the sentence "Upon replacing one-fourth of Cu with Ni due to Mo’s solubility in Ni (as seen from Figure 5(a)), LPS occurs...” - it would be clearer if you specify that you are discussing the substitution of copper with nickel in the alloy composition.
+
+5. In section 3.2.4, the discussion about connectivity should be connected more directly to the effects on structural rigidity and densification. The linkage between the structural characteristics and the densification behavior can be made more explicit.
+
+6. Consistency in Subsection Numbering: There is a discrepancy in the subsection numbering. The subsection "3.2.4 Connectivity" is repeated twice for different topics. The second occurrence should be "3.2.5 Contiguity" instead.
+
+
+7. In the Microstructure Evolution section, you explain the formation of the intermetallic compound at the Mo particle-matrix interface, but a more detailed explanation on why this compound is forming only at this interface could be useful. What properties make Mo more susceptible to the formation of an intermetallic compound?
+
+8. In the Stereological Quantification section, you give detailed and well-explained stereological measurements, but you could also clarify the purpose of these measurements for your study. Why are these the relevant measures to take and how do they contribute to your overall findings?
+
+### Grammatical Refinement
+
+1. "All alloys are sintered to near-net shape, except A4 and A5, where there is a loss of structural rigidity due to distortion" - This sentence is a bit confusing. Consider revising it to: "All alloys, except for A4 and A5, are sintered to near-net shape. A4 and A5 exhibited a loss of structural rigidity due to distortion".
+
+2. "As the Ni-Cu ratio increases, densification further increases, while A4 and A5 show a slight decrease in sintered density compared to A3." - For clarity and consistency, consider changing it to: "As the Ni-Cu ratio increases, densification further increases. However, A4 and A5 show a slight decrease in sintered density compared to A3.". 
+
+3. "The average Mo particle size increases with increasing the Ni:Cu ratio (up to 75:25) and then decreases, as shown in Figure 7(f)." - This could be clearer as: "As the Ni:Cu ratio increases up to 75:25, the average Mo particle size also increases. Beyond this ratio, however, the particle size decreases, as shown in Figure 7(f)."
+
+4. "On increasing the Ni-Cu ratio, i.e. (alloy A2 to alloy A5), liquid phase sintering takes place." - Better as: "With an increase in the Ni-Cu ratio (from alloy A2 to alloy A5), liquid phase sintering occurs."
+
+5. "Contrary to this, we observe that the Mo grains are becoming irregular in shape on increasing the Ni-Cu ratio as shown in Figure 7(a-e)." - Consider revising to: "Contrary to expectations, we observe that Mo grains become irregular in shape as the Ni-Cu ratio increases, as shown in Figure 7(a-e)."
+
+6. There are numerous instances where "i.e." is used where "e.g." would be.
+
+7.  In the sentence "The microstructures of alloys A1-A5 are shown in Figure 7(a-e), resembling the typical microstructure of 90W-10(Ni-Cu) alloys featuring Mo particles embedded into a continuous matrix." It is better to use "embedded in" instead of "embedded into".
+
+8. In the sentence "On carefully observing the BSE images at high magnifications, we find that the matrix of alloy and alloy A2 is homogeneous...", it appears that you might have missed mentioning one of the alloys before "and alloy A2".
+
+9. It's advisable to maintain consistency in number representation. For example, use "Figure" consistently instead of switching between "Figure" and "Fig.".
