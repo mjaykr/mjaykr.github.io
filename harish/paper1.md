@@ -73,3 +73,61 @@
 8. In the sentence "On carefully observing the BSE images at high magnifications, we find that the matrix of alloy and alloy A2 is homogeneous...", it appears that you might have missed mentioning one of the alloys before "and alloy A2".
 
 9. It's advisable to maintain consistency in number representation. For example, use "Figure" consistently instead of switching between "Figure" and "Fig.".
+
+# Comment for Section 3.3 : Result and Discussion
+
+1.  In the "Thermodynamic study" section, you have detailed the process, but a discussion on how the results correlate with or deviate from your EDS and XRD findings would be insightful.
+
+2.  It might be beneficial to occasionally link the results back to what was stated in the introduction or hypothesis, which gives context to the significance of the findings.
+
+3.  In section 3.3.1, after presenting the EDS results, it may be fruitful to provide more insight into what these results imply regarding the properties and performance of the alloys. Perhaps discussing the implications of the phase homogeneity or lack thereof on the mechanical properties, corrosion resistance, or other relevant aspects would be enlightening.
+
+4.  Title for Table 3: There is a discrepancy in numbering, as “Table 3” is mentioned twice. It is necessary to revise the numbering for coherence and clear referencing.
+
+5.  There appears to be an inconsistency in figure numbering and referencing. For instance, in the section "3.3.2 XRD Analysis," the XRD patterns are stated to be shown in Figure 18, however, the context indicates that this should be Figure 19. It is advisable to ensure that all figures are correctly numbered and referenced throughout the manuscript.
+
+6.  Acronyms such as BSE (Back Scattered Electrons) should be explicitly defined at their first mention.
+
+7. In the "3.3 Phase evolution" section, an interpretation of how the elemental composition changes in different alloys could be more elaborative. Discussing the mechanisms or factors leading to these changes would augment the manuscript's depth.
+
+8.  In the "3.4 Thermodynamic study" section, a more detailed explanation of the Liquid Miscibility Gap (LMG) would be beneficial. A brief overview of its significance in the context of your research could add value to the reader's understanding.
+
+9.  It seems the section "3.4 Mechanism of liquid phase sintering in 90Mo-10(Ni-Cu) alloys" has been truncated and lacks completion. Please ensure that all the steps in the mechanism are included, and the section is concluded appropriately.
+
+10.   Provide a citation or reference for the THEMOCALC software
+
+11.   Alloy A4: It would be helpful if you could provide the exact composition for the Cu-rich matrix for Alloy A4 as you have done for the other alloys. This is currently missing in Table 3.
+
+12. Some explanation about the THEA v3.3 database and the THEMOCALC software would be helpful for readers unfamiliar with these tools.
+
+13. It would be pertinent to compare your findings with existing literature. For instance, how does the phase evolution in your alloys compare to what has been previously observed or theorized? Are there any deviations, and if so, how can they be explained?
+
+14. 
+
+
+### Grammatical Refinement
+
+1. In section 3.3.2, change "The XRD patterns of all the alloys is shown" to "The XRD patterns of all the alloys are shown".
+
+2. For consistency, use either “wt.%” or “wt%” throughout the text. The current text uses both forms interchangeably.
+
+3. "The Mo particles have a BCC crystal structure, and Cu-rich and Ni-rich matrix phases have an FCC crystal structure." - Reword for clarity: "The Mo particles possess a BCC crystal structure, while both Cu-rich and Ni-rich matrix phases exhibit an FCC crystal structure."
+
+4. "The intermetallic compound also forms when Mo-(1.5-3wt%)Ni alloys were solid state sintered at 1300°C for 1 hour in a hydrogen atmosphere [17]." - Maintain tense consistency: "The intermetallic compound also formed when Mo-(1.5-3wt%)Ni alloys were solid-state sintered at 1300°C for 1 hour in a hydrogen atmosphere [17]."
+
+5. "To our knowledge Mo-Ni-Cu is the first system which employs LPS in the presence of two liquid phases, having different solubilities of base metal." - Add a comma for better readability: "To our knowledge, Mo-Ni-Cu is the first system which employs LPS in the presence of two liquid phases, having different solubilities of base metal."
+
+6. "This is evident from Figure 8(a-b), where we can see that the MoNi intermetallic compound is only found at the interfaces between Mo grain and Ni-rich solid solution, as shown in Figure 8." - You repeated the reference to Figure 8. Consider revising to: "This is evident from Figure 8(a-b), which shows that the MoNi intermetallic compound is only found at the interfaces between Mo grain and Ni-rich solid solution."
+
+7. "During heating of the compacted powders (green compact), when the first liquid forms, it will wet the Mo grains and helps in the rearrangement step, as shown in Figure ." - Maintain tense consistency and correct syntax: "During the heating of compacted powders (green compact), when the first liquid forms, it wets the Mo grains and helps in the rearrangement step, as shown in Figure ." (Infact rewrite it, First liqid? drop compacted powders, use only green compact)
+
+8. "As can be seen from the BSE micrographs, the amount of Ni-rich matrix phase increases with the Ni-Cu ratio." can be rephrased to "The BSE micrographs illustrate an increase in the amount of the Ni-rich matrix phase as the Ni-Cu ratio increases."
+
+
+# Summary and conclunsion
+
+Liquid phase sintering in the Mo-Ni-Cu ternary system transpires either in the presence of a single liquid phase or dual liquid phases, contingent upon the Ni content. Alloys with a higher proportion of Cu (alloys A1 and A2) undergo sintering in the presence of a Cu-rich liquid phase. However, the densification process is somewhat languid due to the minimal solubility of Mo in the Cu-rich liquid. Conversely, alloys with a preponderance of Ni (alloys A3 and A4) experience sintering involving both Cu-rich and Ni-rich liquid phases. The Ni-rich liquid phase plays a pivotal role in accentuating densification owing to its elevated solubility for Mo.
+
+Stereological analyses divulge that alloys with a high content of Ni (alloys A3 and A4) exhibit larger grain sizes coupled with high Mo solubility. Furthermore, these alloys manifest low dihedral angles and low interconnectivity, which contribute to the loss of structural cohesiveness and lead to geometric distortion. Prolonged sintering durations facilitate the formation of the MoNi intermetallic compound at the interfaces between Mo particles and the Ni-rich liquid. This stable intermetallic compound acts as a barrier to solution-reprecipitation reactions and impairs further grain growth and Mo particle rounding, as corroborated by stereological analyses.
+
+Based on the insights gleaned from this investigation, a putative mechanism for liquid phase sintering in the Mo-Ni-Cu system involving dual liquid phases is posited. Given the salience of sintering time and temperature in determining the attributes of liquid phase sintered alloys, a supplementary study is slated to examine the employment of homologous sintering temperatures to achieve uniform superheat across all compositions. Moreover, the optimization of sintering duration will be explored to elucidate the conditions conducive to the synthesis of 90Mo-10(Ni-Cu) alloys devoid of intermetallic compounds.
