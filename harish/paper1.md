@@ -141,3 +141,5 @@ Initial findings indicate that densification of Mo-compacts escalates with incre
 Thermodynamic analyses were executed employing Thermo-Calc software, generating isothermal sections of Mo-Ni-Cu ternary phase diagrams at discrete temperatures to elucidate the heterogeneous matrix and intermetallic compound formation. In Ni-rich alloys, two distinct liquid phases – Ni-rich and Cu-rich – emerge at sintering temperatures. These phases, exhibiting disparate solubilities for molybdenum, solidify into a heterogeneous matrix. Moreover, the presence of a Ni-rich liquid phase coupled with extended sintering durations culminates in the formation of MoNi intermetallic compounds. Both micro-hardness and bulk hardness escalated with increasing Ni:Cu ratios in the binder phase.
 
 These revelations provide the groundwork for postulating a putative mechanism for liquid phase sintering in the Mo-Ni-Cu system when two liquid phases are present.
+
+Keywords :> 1. Liquid Phase Sintering 2. Molybdenum-Nickel-Copper Alloys 3. Microstructural Evolution 4. Powder Metallurgy 5. Intermetallic Compounds
