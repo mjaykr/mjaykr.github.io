@@ -112,11 +112,17 @@ The diffusion coefficient is an important part of the study, so its introduction
 4. The concept of "necking" or "neck formation" during the sintering process is explained multiple times in the text. For example:
 
 "The results showed that during the heating period, the particles form a neck..."
+
 "It is noted that the necking between the particles occurs during the heating period..."
+
 "The neck formed during the holding period remains the same during the cooling period..."
+
 You could condense this information into a single, more comprehensive explanation of neck formation during the different stages of the sintering process, and then reference it later as needed.
 
 5. Similarly, there's repetition in the description of atomic movement and displacement. For instance:
+
 "The atomic movements during sintering were examined utilizing vector diagrams to further explain the driving force of nanoparticle sintering."
+
 "The atomic displacement was calculated, and it was observed that atoms displace during the sintering process."
+
 Here, it might be possible to merge these two statements into one, providing a more streamlined explanation of how atomic displacement was studied and what findings were observed.
