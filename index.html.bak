@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mirtunjay Kumar - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom styles for a more beautiful look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Switched to a slightly warmer light gray */
+            color: #334155; /* Slate-700 for text */
+        }
+
+        .section-title {
+            @apply text-4xl font-extrabold text-slate-800 mb-12 text-center;
+        }
+
+        .section-title-sidebar {
+            @apply text-2xl font-bold text-slate-600;
+        }
+
+        .card {
+            @apply bg-white p-6 rounded-xl border border-transparent shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300;
+        }
+        
+        .card:hover {
+             border-color: #5eead4; /* Teal-300 border on hover */
+        }
+        
+        .social-icon-link {
+            @apply text-indigo-200 hover:text-white transition-all duration-300 ease-in-out transform hover:scale-110;
+        }
+
+        /* White outline effect for social icons */
+        .social-icon-link svg,
+        .social-icon-link img {
+            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
+        }
+
+        /* Scroll-triggered animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-800 hover:text-teal-600 transition-colors">Dr. Mirtunjay Kumar</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-300">About</a>
+                <a href="#experience" class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-300">Experience</a>
+                <a href="#publications" class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-300">Publications</a>
+                <a href="#skills" class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-300">Skills</a>
+                <a href="#cv" class="text-slate-600 hover:text-teal-600 font-medium transition-colors duration-300">CV</a>
+                <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-5 rounded-full transition-all duration-300 shadow hover:shadow-lg">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-700">
+                <i data-feather="menu" class="h-7 w-7"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-slate-200">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-teal-600">About</a>
+            <a href="#experience" class="block py-2 text-slate-600 hover:text-teal-600">Experience</a>
+            <a href="#publications" class="block py-2 text-slate-600 hover:text-teal-600">Publications</a>
+            <a href="#skills" class="block py-2 text-slate-600 hover:text-teal-600">Skills</a>
+            <a href="#cv" class="block py-2 text-slate-600 hover:text-teal-600">CV</a>
+            <a href="#contact" class="block mt-2 bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <div class="container mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Left Content -->
+                <div class="reveal text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">Dr. Mirtunjay Kumar</h1>
+                    <p class="text-lg md:text-xl text-indigo-200 mb-8">Postdoctoral Research Associate | Materials Science & Engineering</p>
+                    <div class="flex justify-center md:justify-start items-center space-x-6">
+                        <!-- GitHub Icon -->
+                        <a href="https://mjaykr.github.io/" target="_blank" class="social-icon-link" aria-label="GitHub">
+                           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com/in/mjaykr/" target="_blank" class="social-icon-link" aria-label="LinkedIn">
+                           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <!-- Google Scholar Icon -->
+                        <a href="https://scholar.google.com/citations?user=LlFMahOAAAAJ" target="_blank" class="social-icon-link" aria-label="Google Scholar">
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar Logo" class="h-6">
+                        </a>
+                        <!-- ORCID Icon -->
+                        <a href="https://orcid.org/0000-0002-5706-2283" target="_blank" class="social-icon-link" aria-label="ORCID">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID Logo" class="h-7">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content (Initials Circle) -->
+                <div class="reveal">
+                    <div class="w-40 h-40 md:w-48 md:h-48 rounded-full ring-4 ring-white/20 shadow-2xl overflow-hidden">
+                         <img src="pic.jpg" 
+                             alt="Profile picture of Dr. Mirtunjay Kumar" 
+                             class="w-full h-full object-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/192x192/E2E8F0/475569?text=MK';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 py-12">
+            <!-- About Section -->
+            <section id="about" class="py-24">
+                <div class="reveal max-w-6xl mx-auto grid md:grid-cols-4 gap-8 md:gap-16">
+                     <div class="md:col-span-1">
+                        <h2 class="section-title-sidebar">About Me</h2>
+                    </div>
+                    <div class="md:col-span-3">
+                        <p class="text-lg text-slate-700 leading-relaxed">
+                            I am a dedicated and skilled Postdoctoral Research Associate at the University of Sheffield, with a strong focus on the mechanical properties of battery materials. My work within the FutureCAT consortium involves pioneering research into the fabrication and characterization of complex metal oxides for next-generation energy storage.
+                            <br><br>
+                            With a Ph.D. from the prestigious Indian Institute of Technology Kanpur, my expertise spans advanced material characterization techniques, including in-situ nano-indentation and micro-computed tomography, complemented by a deep understanding of crystal plasticity modeling. My goal is to contribute to the development of more resilient and efficient materials to address critical engineering challenges.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="py-24">
+                <div class="reveal max-w-6xl mx-auto grid md:grid-cols-4 gap-8 md:gap-16">
+                    <div class="md:col-span-1">
+                        <h2 class="section-title-sidebar whitespace-nowrap">Professional Experience</h2>
+                    </div>
+                    <div class="md:col-span-3">
+                        <div class="space-y-12 relative border-l-2 border-slate-200 pl-10">
+                            <!-- Timeline Dot -->
+                            <div class="absolute -left-[1.1rem] top-1 w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+                            <div class="experience-item">
+                                <h3 class="text-xl font-bold text-slate-900">Postdoctoral Research Associate</h3>
+                                <p class="font-medium text-blue-600">University of Sheffield, UK</p>
+                                <p class="text-sm text-slate-500 mt-1">Oct 2023 – Present</p>
+                                <p class="text-slate-600 mt-3">
+                                    Fabricating and mechanically characterising battery materials, employing sophisticated particle consolidation methods, in-situ nano-indentation, EBSD and micro-computed tomography to investigate 3D electrode microstructure, defect content, and resilience.
+                                </p>
+                            </div>
+                            
+                            <!-- Timeline Dot -->
+                            <div class="absolute -left-[1.1rem] top-[13.5rem] w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+                             <div class="experience-item">
+                                <h3 class="text-xl font-bold text-slate-900">Postdoctoral Research Associate</h3>
+                                <p class="font-medium text-blue-600">University of Manchester, UK</p>
+                                <p class="text-sm text-slate-500 mt-1">Nov 2022 – Oct 2023</p>
+                                <p class="text-slate-600 mt-3">
+                                   Extended crystal plasticity models in DAMASK to enhance understanding of light alloys during warm forming processes, coupling models with phase transformation and dynamic precipitation simulations as part of the LightForm programme.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="py-24">
+                <div class="reveal max-w-6xl mx-auto grid md:grid-cols-4 gap-8 md:gap-16">
+                    <div class="md:col-span-1">
+                        <h2 class="section-title-sidebar">Education</h2>
+                    </div>
+                    <div class="md:col-span-3">
+                        <div class="space-y-12 relative border-l-2 border-slate-200 pl-10">
+                            <!-- M.Tech-Ph.D. Item -->
+                            <div class="absolute -left-[1.1rem] top-1 w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+                            <div class="education-item">
+                                 <h3 class="text-xl font-bold text-slate-900">M.Tech-Ph.D. (Joint Degree)</h3>
+                                 <p class="font-medium text-blue-600">Indian Institute of Technology Kanpur, 2022</p>
+                                 <p class="text-sm text-slate-500 mt-1">Materials Science and Engineering</p>
+                                 <div class="mt-4 space-y-3">
+                                    <p class="text-sm text-slate-600 border-l-4 border-teal-300 pl-4">
+                                        <span class="font-semibold text-slate-700">Ph.D. Thesis:</span> Experimental and Crystal Plasticity Simulation Study on the Deformation Behavior of Liquid Phase Sintered Tungsten Heavy Alloys.
+                                    </p>
+                                     <p class="text-sm text-slate-600 border-l-4 border-indigo-300 pl-4">
+                                        <span class="font-semibold text-slate-700">M.Tech. Thesis:</span> Development of Processing-Microstructure-Mechanical Behaviour Paradigms for Tungsten Heavy Alloys.
+                                    </p>
+                                 </div>
+                            </div>
+
+                            <!-- B.Tech. Item -->
+                             <div class="absolute -left-[1.1rem] top-[17.5rem] w-5 h-5 bg-blue-500 rounded-full border-4 border-white"></div>
+                            <div class="education-item">
+                                <h3 class="text-xl font-bold text-slate-900">B.Tech., Metallurgical & Materials Engineering</h3>
+                                <p class="font-medium text-blue-600">National Institute of Technology Warangal, 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Publications Section -->
+            <section id="publications" class="py-24">
+                <div class="reveal">
+                    <h2 class="section-title">Selected Publications</h2>
+                    <div class="max-w-4xl mx-auto space-y-5">
+                        <!-- Visible Publications -->
+                        <div class="card publication-item">
+                            <h3 class="font-semibold text-lg text-slate-800">Automated quantification of dihedral angles in sintered tungsten heavy alloys using image processing</h3>
+                            <p class="text-sm text-slate-500">M. Kumar,H. Ranot, , et al. | International Journal of Refractory Metals and Hard Materials, 2025</p>
+                             <a href="https://doi.org/10.1016/j.ijrmhm.2025.107467" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item">
+                            <h3 class="font-semibold text-lg text-slate-800">Mechanical Properties of Cycled Single Crystal LiNi<sub>0.8</sub>Mn<sub>0.1</sub>Co<sub>0.1</sub>O<sub>2</sub> (NMC811) Particles</h3>
+                            <p class="text-sm text-slate-500">A. Jangde, M. Kumar, et al. | Batteries & Supercaps, 2025</p>
+                            <a href="https://doi.org/10.1002/batt.202400691" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item">
+                            <h3 class="font-semibold text-lg text-slate-800">Mapping Dynamic Restoration Mechanisms and Flow Instability in 10Cr-10Ni Maraging Steel</h3>
+                            <p class="text-sm text-slate-500">P. Setia, S. S. Singh, et al. | Metallurgical and Materials Transactions A, 2025</p>
+                             <a href="https://doi.org/10.1007/s11661-025-07714-7" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+
+                        
+                        <!-- Hidden Publications -->
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Implications of the Micromechanical Taylor Factor on Work Hardening Parameters</h3>
+                            <p class="text-sm text-slate-500">M. Kumar & S. Mishra | Computational Materials Science, 2024</p>
+                             <a href="https://doi.org/10.1016/j.commatsci.2024.112892" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Evolution of Microstructure and Crystallographic Texture During Cold Rolling of Liquid Phase Sintered Tungsten Heavy Alloy</h3>
+                            <p class="text-sm text-slate-500">M. Kumar, N. Gurao, & A. Upadhyaya | International Journal of Refractory Metals and Hard Materials, 2022</p>
+                             <a href="https://doi.org/10.1016/j.ijrmhm.2022.105849" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                         <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Implications of Slip Transition on the Work Hardening and Texture Evolution of Nickel-Tungsten-Iron Ternary Alloy</h3>
+                            <p class="text-sm text-slate-500">M. Kumar, N. Gurao, & A. Upadhyaya | Materials Characterization, 2022</p>
+                             <a href="https://doi.org/10.1016/j.matchar.2022.112010" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Effect of Tungsten Content and Compression on Microstructure and Texture Evolution in Liquid Phase Sintered Heavy Alloy</h3>
+                            <p class="text-sm text-slate-500">M. Kumar, N. P. Gurao, and A. Upadhyaya | Metallurgical and Materials Transactions A, 2022</p>
+                             <a href="https://doi.org/10.1007/s11661-021-06586-x" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Enriching Mean-Field Self-Consistent Texture Simulations Using the Full-Field FFT Model</h3>
+                            <p class="text-sm text-slate-500">M. Kumar, A. Singh, and S. Mishra | Materials Science and Technology, 2021</p>
+                             <a href="https://doi.org/10.1080/02670836.2021.2007455" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Incorporating Latent Hardening in Visco-Plastic Self-Consistent Framework for Performing Texture Simulations</h3>
+                            <p class="text-sm text-slate-500">M. Kumar, A. Singh, V. K. Beura, and S. Mishra | Materials Science and Technology, 2021</p>
+                             <a href="https://doi.org/10.1080/02670836.2021.1946949" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Evolution of Rotated Brass Texture by Cross Rolling: Implications on Formability</h3>
+                            <p class="text-sm text-slate-500">S. Mishra, M. Kumar, and A. Singh | Materials Science and Technology, 2020</p>
+                             <a href="https://doi.org/10.1080/02670836.2020.1773036" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Finite Element Assisted Self-Consistent Simulations to Capture Texture Heterogeneity During Hot Compression</h3>
+                            <p class="text-sm text-slate-500">B. P. Singh, M. Kumar, et al. | International Journal of Materials Research, 2023</p>
+                             <a href="https://doi.org/10.1515/ijmr-2022-0138" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Electrodeposition of Bi<sub>2</sub>Te<sub>3</sub> Thin Films for Thermoelectric Applications: Effect of Electrolyte pH</h3>
+                            <p class="text-sm text-slate-500">V. S. Khairnar, A. N. Kulkarni, et al. | Journal of Materials Science: Materials in Electronics, 2023</p>
+                             <a href="https://doi.org/10.1007/s10854-023-10295-z" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Deformation Behaviour of the Silicon Doped Metastable Fe<sub>50-x</sub>Mn<sub>30</sub>Co<sub>10</sub>Cr<sub>10</sub>Si<sub>x</sub> Complex Concentrated Alloy...</h3>
+                            <p class="text-sm text-slate-500">R. Jain, M. Kumar, et al. | Materials Science and Engineering: A, 2023</p>
+                             <a href="https://doi.org/10.1016/j.msea.2023.145620" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                        <div class="card publication-item hidden">
+                            <h3 class="font-semibold text-lg text-slate-800">Effect of Concentration of Electrolyte on Thermoelectric Properties of Electrodeposited Bi<sub>2</sub>Te<sub>3</sub> Thin Films</h3>
+                            <p class="text-sm text-slate-500">V. S. Khairnar, A. N. Kulkarni, et al. | Journal of Materials Science: Materials in Electronics, 2024</p>
+                             <a href="https://doi.org/10.1007/s10854-024-13138-7" target="_blank" class="text-teal-600 hover:underline font-semibold text-sm mt-2 inline-block group">View Publication <i data-feather="arrow-right" class="inline h-4 w-4 transform group-hover:translate-x-1 transition-transform"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-10">
+                        <div id="google-scholar-link" class="hidden text-center mb-6">
+                            <a href="https://scholar.google.com/citations?user=LlFMah0AAAAJ" target="_blank" class="text-slate-600 hover:text-blue-600 transition-colors duration-300 group inline-flex items-center">
+                                <span>For a complete list, visit my Google Scholar profile</span>
+                                <i data-feather="external-link" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:scale-110"></i>
+                            </a>
+                        </div>
+                        <button id="toggle-publications" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-3 px-6 rounded-full transition-colors duration-300">Show More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="py-24">
+                <div class="reveal max-w-6xl mx-auto grid md:grid-cols-4 gap-8 md:gap-16">
+                     <div class="md:col-span-1">
+                        <h2 class="section-title-sidebar">Technical Skills</h2>
+                    </div>
+                    <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Experimental Skills -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 transform hover:-translate-y-1 transition-transform duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 text-blue-500 rounded-lg w-12 h-12 flex items-center justify-center mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v4.517l1.557 1.557A1 1 0 0117 13V5l-1-1V4z" /></svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-800">Experimental</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">X-ray Tomography</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Neutron Diffraction</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">SEM/EBSD</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">TEM</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Nano-Indentation</span>
+                            </div>
+                        </div>
+
+                        <!-- Analytical & Simulation Skills -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 transform hover:-translate-y-1 transition-transform duration-300">
+                             <div class="flex items-center mb-4">
+                                <div class="bg-green-100 text-green-500 rounded-lg w-12 h-12 flex items-center justify-center mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-800">Analytical & Simulation</h3>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Crystal Plasticity</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">DAMASK</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Dream.3D</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Image Processing</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Data Analysis</span>
+                            </div>
+                        </div>
+
+                        <!-- Programming Skills -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-100 transform hover:-translate-y-1 transition-transform duration-300">
+                             <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 text-purple-500 rounded-lg w-12 h-12 flex items-center justify-center mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-800">Programming</h3>
+                             </div>
+                             <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">MATLAB</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Fortran</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">C++</span>
+                                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CV Download Section -->
+            <section id="cv" class="py-24 bg-white/70 rounded-3xl">
+                <div class="container mx-auto px-6 text-center reveal">
+                    <h2 class="section-title">Download My CV</h2>
+                    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+                        For a more detailed look at my work, publications, and professional background, please feel free to download a copy of my CV.
+                    </p>
+                    <a href="CV of Mirtunjay Kumar.pdf" download class="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
+                        <i data-feather="download" class="w-5 h-5 mr-3"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-24">
+                <div class="text-center max-w-2xl mx-auto reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="text-lg text-slate-600 mb-10">I am open to discussing new research opportunities, collaborations, or other inquiries. Please feel free to reach out.</p>
+                    <a href="mailto:m.kumar@sheffield.ac.uk" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
+                        <i data-feather="send" class="w-5 h-5 mr-3 transform transition-transform duration-300 group-hover:rotate-12"></i>
+                        <span>Send me an Email</span>
+                    </a>
+                    <div class="mt-16 flex justify-center space-x-8">
+                        <a href="mailto:mjay@hotmail.com" class="icon-link" aria-label="Email"><i data-feather="mail" class="w-6 h-6"></i></a>
+                        <a href="https://www.linkedin.com/in/mjaykr/" target="_blank" class="icon-link" aria-label="LinkedIn"><i data-feather="linkedin" class="w-6 h-6"></i></a>
+                        <a href="https://mjaykr.github.io/" target="_blank" class="icon-link" aria-label="GitHub"><i data-feather="github" class="w-6 h-6"></i></a>
+                        <a href="tel:+447833824515" class="icon-link" aria-label="Phone"><i data-feather="phone" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Dr. Mirtunjay Kumar. All Rights Reserved.</p>
+             <p class="text-sm mt-2">Designed with passion.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Show/Hide Publications and Google Scholar link
+        const togglePublicationsButton = document.getElementById('toggle-publications');
+        const hiddenPublications = document.querySelectorAll('.publication-item.hidden');
+        const googleScholarLink = document.getElementById('google-scholar-link');
+        
+        togglePublicationsButton.addEventListener('click', () => {
+            hiddenPublications.forEach(pub => {
+                pub.classList.toggle('hidden');
+            });
+            googleScholarLink.classList.toggle('hidden');
+            togglePublicationsButton.textContent = togglePublicationsButton.textContent === 'Show More' ? 'Show Less' : 'Show More';
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: unobserve after revealing to save resources
+                    // revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+        });
+
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+
+    </script>
+</body>
+</html>
